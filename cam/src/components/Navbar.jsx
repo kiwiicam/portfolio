@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-
-
 import '../css/Navbar.css'
+import { IoMenu } from "react-icons/io5";
+import { AiOutlineClose } from "react-icons/ai";
+import { MdOutlineMail } from "react-icons/md";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
 function Navbar() {
     const [open, setOpen] = useState(false);
@@ -13,11 +15,12 @@ function Navbar() {
     return (
         <>
             <div className='container'>
+
                 {open ?
 
                     <div className='container-cross'>
 
-                        <RxCross1 className='cross' onClick={showMenu} />
+                        <AiOutlineClose className='cross' onClick={showMenu} />
                         <div className='box'>
 
                             <Link to="">
@@ -33,12 +36,19 @@ function Navbar() {
                                 <h2>Contact me</h2>
                             </Link>
                         </div>
+
                     </div>
                     :
                     <div className='dropDown' >
-                        <RxHamburgerMenu className='menu' onClick={showMenu} />
+                        <IoMenu className='menu' onClick={showMenu} />
+                        <h2>Menu</h2>
                     </div>
                 }
+                <div className='end-icons'>
+                    <MdOutlineMail className='mail'/>
+                    <CiLinkedin className='linked-in'/>
+                    <FaGithub className='github'/>
+                </div>
             </div>
         </>
     )

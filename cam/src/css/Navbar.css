@@ -1,17 +1,96 @@
 * {
     text-decoration: none;
     margin: 0;
-    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+.container{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+}
+
+.dropDown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropDown h2{
+    color: rgb(102, 252, 241);
+       
 }
 
 .menu {
     font-size: 50px;
     color: rgb(102, 252, 241);
+    cursor: pointer;
 }
 
 
-
 .cross {
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(102, 252, 241);
+    cursor: pointer;
+}
+
+h2{
+    color: rgb(31, 40, 51);
+    margin: 5px;
+    font-family: 'Playwrite GB S', sans-serif;
+}
+
+.box{
+    margin-top: 3px;
+    margin-left: 6px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(102, 252, 241);
+    border-radius: 15px;
+    position: absolute;
+}
+
+.box h2:hover{
+    color: rgb(69, 162, 158);
+}
+
+.end-icons{
+    margin-left: auto;
+    color: rgb(102, 252, 241);
+}
+.mail{
+    margin-top: 3px;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+}
+.linked-in{
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.github{
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    } 
 }
