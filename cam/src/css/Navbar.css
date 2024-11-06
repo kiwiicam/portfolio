@@ -1,88 +1,106 @@
 * {
     text-decoration: none;
     margin: 0;
+
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@402&display=swap');
 
-.container{
+.container {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: row;
-    width: 98vw;
-}
-
-.dropDown{
-    display: flex;
-    flex-direction: row;
+    width: 100vw;
+    height: 6vh;
+    z-index: 999;
+    background-color: rgb(112, 145, 230);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     align-items: center;
-}
+    border-bottom: 2px inset  rgba(237, 232, 245, 0.7);
 
-.dropDown h2{
-    color: rgb(102, 252, 241);
-       
-}
-
-.menu {
-    font-size: 50px;
-    color: rgb(102, 252, 241);
-    cursor: pointer;
 }
 
 
-.cross {
-    font-size: 40px;
-    color: rgb(102, 252, 241);
-    cursor: pointer;
+h2 {
+    color: white;
+    font-size: 17px;
 }
 
-h2{
-    color: rgb(31, 40, 51);
-    margin: 5px;
-    font-family: 'Playwrite GB S', sans-serif;
+.box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 6;
+    width: 25%;
+    justify-content: space-between;
+    margin-left: 20%;
 }
 
-.box{
+.end-icons {
+    margin-left: auto;
     margin-top: 3px;
-    margin-left: 6px;
+    color: white;
+}
+
+.mail:hover{
+    transform: translateY(-4%);
+    color: red;
+}
+.linked-in:hover{
+    transform: translateY(-4%);
+    color: red;
+}
+.github:hover{
+    transform: translateY(-4%);
+    color: red;
+}
+
+.mail {
+    margin-top: 3px;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s linear;
+}
+
+.linked-in {
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s linear;
+}
+
+.github {
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 30px;
+    transition: 0.2s linear;
+}
+
+.nav {
     width: auto;
     height: auto;
-    padding: 10px;
-    background-color: rgb(102, 252, 241);
-    border-radius: 15px;
+    padding: 5px;
+    position: relative;
+    transition: 0.2s transform linear;
+    cursor: pointer;
+}
+
+.nav:hover::after {
+    content: '';
     position: absolute;
-}
-
-.box h2:hover{
-    color: rgb(69, 162, 158);
-}
-
-.end-icons{
-    margin-left: auto;
-    color: rgb(102, 252, 241);
-}
-.mail{
-    margin-top: 3px;
-    font-size: 35px;
-    cursor: pointer;
-    position: relative;
-}
-.linked-in{
-    margin-left: 10px;
-    margin-top: 3px;
-    font-size: 35px;
-    cursor: pointer;
-    position: relative;
-}
-
-.github{
-    margin-left: 10px;
-    margin-top: 3px;
-    font-size: 35px;
-    cursor: pointer;
-    position: relative;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
 }
 
 @keyframes spin {
@@ -92,5 +110,5 @@ h2{
 
     100% {
         transform: rotate(360deg);
-    } 
+    }
 }
