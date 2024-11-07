@@ -3,7 +3,9 @@ import '../css/HomePage.css'
 import Typewriter from 'typewriter-effect';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { MdOutlinePerson4 } from "react-icons/md";
-
+import { FcAbout } from "react-icons/fc";
+import { FaReact } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
 function HomePage() {
   return (
     <>
@@ -45,19 +47,27 @@ function HomePage() {
 
       </div>
       <div className='about'>
-        <h2>About</h2>
+        <h1>About</h1>
         <div className='underline'>
         </div>
         <div className='underline2'>
         </div>
         <div className='writing'>
           <div className='left-div'>
-            <MdOutlinePerson4 className='person' />
-            <p className='left'>I am a hardworking student studying Computer Science at the Auckland University of Technology, I am majoring in Software Development with a minor in Artificial Intelligence, I am in my 2nd year. I enjoy developing web applications, low-level operations and regular software</p>
+            <FcAbout className='about-icon' />
+            <h2 className='left'>I am a hardworking student studying Computer Science at the Auckland University of Technology, I am majoring in Software Development with a minor in Artificial Intelligence, I am in my 2nd year. I enjoy developing web applications, low-level operations and regular software, I also enjoy Video games and sports if you are interested feel free to contact me!</h2>
           </div>
           <div className='right-div'>
-            <p className='right'>My skills include: C - used to understand lower-level topics such as operating systems, Java - used as a multipurpose language and my go-to for coding problems, CSS, HTML, JavaScript, React - my web framework of choice and Node/Express JS - for my backend work</p>
+            <div></div>
+            <div className='icons' id='react'>
+              <FaReact />
+              <p></p>
+            </div>
+            <div className='icons' id='html'>
+              <FaHtml5 />
+            </div>
           </div>
+
         </div>
       </div>
     </>

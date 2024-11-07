@@ -88,7 +88,8 @@
     justify-content: start;
 }
 
-.about h2 {
+.about h1 {
+    color: white;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 50px;
     z-index: 10;
@@ -111,28 +112,64 @@
 .person{
     font-size: 300px;
     color: rgb(112, 145, 230);
-    margin-top: -5%;
-    margin-right: 15%;
+    margin-left: 4%;
 }
 
-.about p{
-    max-width: 300px;
+.about h2{
+    max-width: 500px;
     word-wrap: break-word;
     line-height: 1.5;
     color: white;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 500;
+
 }
 .writing{
     margin-top: 5%;
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
-    align-items:center;
+
+    flex-direction: row;
+
 }
 .writing .left-div{
     display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    align-items: center;
 
+}
+
+.writing .right-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 99.6%;
+    align-items: center;
+
+}
+.about-icon{
+    margin-right: 5%;
+    font-size: 150px;
+    margin-bottom: 10%;
+    
+}
+#react{
+    
+    font-size: 80px;
+    color: aqua;
+}
+.icons{
+    padding:10px ;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 25%;
+    border: 3px solid rgba(255, 0, 0, 0.8);
+    border-radius: 15px;
 }
 
